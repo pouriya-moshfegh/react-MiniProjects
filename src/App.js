@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./counter/counter";
+import NotifCounter from "./notifCounter/NotifCounter";
+import Validation from "./ValidationForm/validation";
+import Quiz from "./Quiz/quiz";
+import Ticket from "./Ticket/Ticket";
+import BookList from "./BookList/BookList";
+// import MainTest from "./Test1/MainTest";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <BookList/>
+      <Ticket name="please"></Ticket>
+      {/* <div className="devide ">...</div> */}
+      <Quiz />
+      {/* <div className="devide ">...</div> */}
+      <Validation />
+      {/* <div className="devide ">...</div> */}
+      <Counter />
+      {/* <div className="devide">...</div> */}
+      <NotifCounter />
+      {/* <div className="devide">...</div> */}
+    </>
   );
 }
 
